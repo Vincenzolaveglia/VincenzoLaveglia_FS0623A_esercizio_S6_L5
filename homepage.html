@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="assets/netflix_logo.png" alt="logo" class="navbar-brand">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="linkNav" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" linkNav" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="linkNav" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="linkNav" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="linkNav" href="#">My list</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center navbarUtente">
+                        <li class="nav-item">
+                            <i class="bi bi-search"></i>
+                        </li>
+                        <li class="nav-item">
+                            <p class="mb-0">KIDS</p>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-bell-fill"></i>
+                        </li>
+                        <li class="nav-item">
+                            <span><a href="profilepage.html">Profilo</a></span>
+                            <a href="profilepage.html"><img src="assets/avatar.png" id="utente" alt="avatar"></a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid titolo">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-lg-6 d-flex align-items-center">
+                    <h1>TV Shows</h1>
+                    <form class="ms-3 mt-3 mt-lg-0">
+                        <label>Generi</label>
+                        <select name="film" id="film">
+                            <option value="Azione">Azione</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Triller">Triller</option>
+                            <option value="Giallo">Giallo</option>
+                            <option value="Commedia">Commedia</option>
+                            <option value="Romantici">Romantici</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-lg-6 d-flex justify-content-lg-end">
+                    <i class="bi bi-justify-left me-2"></i>
+                    <i class="bi bi-grid-fill"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="trendingFilm">
+            <div class="container-fluid">
+                <h2>Trending Now</h2>
+                <div id="filmCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="row d-flex">
+                            <div class="carousel-item col-sm-12 col-lg-2 active">
+                                <img src="assets/media/media0.webp" alt="film0">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media1.jpg" alt="film1">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media2.webp" alt="film2">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media3.webp" alt="film3">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media4.jpg" alt="film4">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media5.webp" alt="film5">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media6.jpg" alt="film6">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media7.webp" alt="film7">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media8.webp" alt="film8">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media9.jpg" alt="film9">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media10.jpg" alt="film10">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media11.jpg" alt="film11">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#filmCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#filmCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="watchAgain">
+            <div class="container-fluid">
+                <h2>Watch It Again</h2>
+                <div id="filmCarousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="row d-flex">
+                            <div class="carousel-item col-sm-12 col-lg-2 active">
+                                <img src="assets/media/media12.jpg" alt="film12">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media13.jpg" alt="film13">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media15.jpg" alt="film15">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media16.webp" alt="film16">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media17.jpg" alt="film17">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media18.jpg" alt="film18">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media19.webp" alt="film19">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media20.jpg" alt="film20">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media21.webp" alt="film21">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media22.webp" alt="film22">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media23.webp" alt="film23">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media24.jpg" alt="film24">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#filmCarousel2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#filmCarousel2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="newReleases">
+            <div class="container-fluid">
+                <h2>New Releases</h2>
+                <div id="filmCarousel3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="row d-flex">
+                            <div class="carousel-item col-sm-12 col-lg-2 active">
+                                <img src="assets/media/media25.webp" alt="film25">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media26.webp" alt="film26">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media27.jpg" alt="film27">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media28.jpg" alt="film28">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media29.jpg" alt="film29">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media30.jpg" alt="film30">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media31.webp" alt="film31">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media32.jpg" alt="film32">
+                            </div>
+                            <div class="carousel-item col-sm-12 col-lg-2">
+                                <img src="assets/media/media15.jpg" alt="film33">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#filmCarousel3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#filmCarousel3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div id="social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+        <div id="linkFooter" class="row">
+            <a href="#" class="col-sm-6 col-lg-4">Audio and Subtitles</a>
+            <a href="#" class="col-sm-6 col-lg-4">Audio description</a>
+            <a href="#" class="col-sm-6 col-lg-4">Help Center</a>
+            <a href="#" class="col-sm-6 col-lg-4">Gift Cards</a>
+            <a href="#" class="col-sm-6 col-lg-4">Media Center</a>
+            <a href="#" class="col-sm-6 col-lg-4">Investor Relatios</a>
+            <a href="#" class="col-sm-6 col-lg-4">Jobs</a>
+            <a href="#" class="col-sm-6 col-lg-4">Terms of Use</a>
+            <a href="#" class="col-sm-6 col-lg-4">Privacy</a>
+            <a href="#" class="col-sm-6 col-lg-4">Legal Notices</a>
+            <a href="#" class="col-sm-6 col-lg-4">Cookie Preference</a>
+            <a href="#" class="col-sm-6 col-lg-4">Comparate Information</a>
+            <a href="#" class="col-sm-6 col-lg-4">Contact Us</a>
+        </div>
+        <button class="col-12 col-lg-2">Service Code</button>
+        <p>
+            &copy;1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}
+        </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
